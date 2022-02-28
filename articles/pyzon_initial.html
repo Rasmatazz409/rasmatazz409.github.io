@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="../styles/w3.css" />
+        <link rel="stylesheet" href="../styles/default.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="charset" content="UTF-8" />
+        <meta name="keywords" content="Coding, Python, HTML, CSS, Portfolio" />
+        <meta name="author" content="Tyler Rasmussen" />
+        <Title>Rasmussen Portfolio - Pyzon Project</Title>
+    </head>                                                                                  
+    <body>
+        <div class="flex_container">
+            <div class="flex_item_left"></div>
+
+            <!-- Center Column Content Here -->
+            <div class="flex_item_center">
+
+            <!-- Website Header/Title Box -->
+            <header class="w3-container w3-blue-gray">
+                <h1 style="text-align:center; font-size:48px">Tyler Rasmussen - Project Portfolio</h1>
+            </header>
+
+            <!-- Website Navigation Bar Here -->
+            <div class="w3-bar w3-dark-gray">
+                <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="../articles/article_list.html" class="w3-bar-item w3-button">Projects</a>
+                <a href="../contact.html" class="w3-bar-item w3-button">Contact</a>
+            </div>
+
+            <!-- Main Content Goes Here -->
+            <article id="pyzon_initial" class="w3-container">
+                <img src="../images/pyzon_logo.png" style="float:right;width:25%;padding:40px" alt="Pyzon Game Logo">
+                <h3>Creating a Text-Based Adventure Game Using Python</h3>
+                <p class="date">February 2022</p>
+                <p>
+                    Something done to have a little fun and stretch my coding skills: a text-based adventure
+                    game akin to earlier games such as Zork and Spider and Web.  This project is a work-in-progress
+                    and will see continued improvements, adding new features and fixing issues as it is developed.
+                </p>
+                <p>
+                    The initial inspiration from this project came from two primary sources: wanting to create a project
+                    that demonstrates classes/class inheritance and a coding puzzle from Codewars involving two fighting robots.
+                    At this point, I had little to no experience or knowledge of how classes worked in Python.  The idea behind this
+                    mechanic is that a list of player "classes" would exist that each has its own benefits and cons that can either
+                    help or hinder the player depending on what is chosen.  Then, that class would be inherited by a basic child "player"
+                    class that would ultimately be used throughout the game, simply using the parent class as a starting point.  Status
+                    of the player is directly modified within the class, such as loss of hit points or increases to attack damage.
+                </p>
+                <p>
+                    One of the strongest features of this particular build of the game is input validation.  I was and am aware that
+                    modules exist that take care of input validation without much work on the developer, but I wanted to test and see
+                    if I could create a validation system that - for the most part - could not be bypassed or broken by the standard player.
+                    The downside to such a system is that it takes up lots of space (an entire file is dedicated solely to validation functions)
+                    and a different validation system has to be created for each use-case.  If a situation calls for a yes or no answer, it is
+                    entirely different than one that requires the player to select an item from a list.  Efforts have been made to streamline some of
+                    these functions, such as ones where players select from multiple options.  These have been made more efficient by means of standardizing
+                    the function code such that it works with any number of inputs simply by passing a variable to it listing how many options
+                    the player has to choose from.
+                </p>
+                <p>
+                    At the moment, the game features the following core features:
+                    <ul>
+                        <li>A functioning main menu</li>
+                        <li>Difficuly settings that change the length of the game</li>
+                        <li>Player classes that change player stats for each run of the game</li>
+                        <li>A semi-randomized environment generator that gives each "room" a unique environment</li>
+                        <li>A basic combat system in which players can actively lose health and are given multiple options to choose from</li>
+                        <li>A list of enemy classes that are randomly picked from so that encounters can have variety</li>
+                    </ul>
+                </p>
+                <p>
+                    The next steps for this game are a variety of features that I would personally like to see added such as a player inventory that can
+                    provide healing items or weapons to increase attack, further variety to enemies and environments, potential end-of-run bosses that pose
+                    a significant challenge.  I would also like to implement a save system, allowing players to return to a specific part of their run.  This feature,
+                    however, poses the biggest challenge and will take some time to implement.
+                </p>
+                <p>
+                    As the game is developed, the end goal is a fully-playable technical demo of a game that can be played and enjoyed by the
+                    average person with little to no outside assistance given, other than starting the actual demo.  Care is being given to 
+                    menu options and features such that no prior knowledge is needed to progress and play through the game other than knowing how to type commands.
+                    Further improvements to the game will be added as additional updates to the blog.
+                </p>
+            </article>
+
+            <!-- Footer Section -->
+            <div style="padding-bottom:40px"></div>
+            <footer class="w3-container w3-dark-gray" style="text-align:center;">
+                <p>Website Copyright &copy;2022 by Tyler Rasmussen.  All Rights Reserved.</p>
+                <p>This website is powered by <a href="https://www.w3schools.com/w3css/default.asp" style="background-color:gray;text-decoration:none">W3.CSS</a></p>
+            </footer>
+
+            </div> <!-- ENDING DIV TO MAIN CONTAINER; DO NOT DELETE -->
+            <div class="flex_item_right"></div>
+        </div>
+    </body>
+</html>
