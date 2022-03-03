@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="../styles/w3.css" />
+        <link rel="stylesheet" href="../styles/default.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="charset" content="UTF-8" />
+        <meta name="keywords" content="Coding, Python, HTML, CSS, Portfolio" />
+        <meta name="author" content="Tyler Rasmussen" />
+        <Title>Rasmussen - Pyzon Project</Title>
+    </head>                                                                                  
+    <body>
+        <!-- Center Column Content Here -->
+        <div>
+
+        <!-- Website Header/Title Box -->
+        <header class="w3-container w3-flat-wet-asphalt">
+             <img src="../images/logo_white_long.png" class="center" alt="Site Logo">
+         </header>
+
+        <!-- Website Navigation Bar Here -->
+        <!-- Color Active Button with w3-blue-gray -->
+        <div class="w3-bar w3-dark-gray">
+            <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="../aboutme.html" class="w3-bar-item w3-button">About Me</a>
+            <a href="../articles/article_list.html" class="w3-bar-item w3-button">Projects</a>
+            <a href="../contact.html" class="w3-bar-item w3-button">Contact</a>
+        </div>
+
+        <!-- Main Content Goes Here -->
+        <article id="pyzon_initial" class="w3-container">
+            <img src="../images/loan_data.png" style="float:right;width:30%;padding:40px" alt="Student loan data processed with python">
+            <h3>Processing Student Loan Data with Python & Pandas</h3>
+            <p class="date">December 2021</p>
+            <p>
+                An initial venture into the world of data analytics, this project utilized Python and the Pandas library to
+                obtain and parse the information necessary to derive information from the dataset.  The dataset in question
+                is from the U.S. Government's report on Federal Loan Disbursements for the AY 2019.  The data was categorized
+                by program of study and provided information regarding the total amount of money disbursed as well as the
+                number of recipients who received the funds.  The initial thought behind the project was to develop a visual
+                allowing me to see an estimate of how much money was being disbursed to a given number of students.
+            </p>
+            <p>
+                The data was imported into python using the pandas library by reading a CSV file containing the data.  The data
+                had headers for program of study, amount disbursed, and number of total disbursements (or students receiving the 
+                funds.)  The data could not be extracted as-is, due to the fact that the data was formatted for readability.  This 
+                included unusual formatting and extra characters such as $ for the dollar amounts and commas separating the
+                thousands in both students and disbursement amounts.  Before the data could be analyzed, unnecessary characters 
+                were stripped via regex and list iterations until a useable, anlyzeable set of data was derived.  From this point,
+                matplotlib was used to plot a scatter chart with amounts disbursed on the y-axis and students on the x-axis.
+            </p>
+        </article>
+
+        <!-- Footer Section -->
+        <div style="padding-bottom:40px"></div>
+        <footer class="w3-container w3-flat-midnight-blue w3-cell-bottom" style="text-align:center;">
+            <p>Website Copyright &copy;2022 by Tyler Rasmussen.  All Rights Reserved.</p>
+            <p>This website is powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a></p>
+        </footer>
+
+        </div> <!-- ENDING DIV TO MAIN CONTAINER; DO NOT DELETE -->
+    </body>
+</html>
