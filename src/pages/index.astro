@@ -12,9 +12,8 @@ const posts = allPosts.slice(-3).reverse();
      my personal insights into numerous topics.  You'll find a wide variety of posts here ranging from the realm of technology to the creative arts - no two posts are often alike and my interests vary often.
      There's a little something for everyone here - regardless of whether you're a passing visitor, someone looking to collaborate on a creative project, or someone seeking to connect professionally.  Whatever the reason,
      I hope you find something enjoyable or worthwhile during your visit.  If you're looking for additional content, feel free to check out my other social media handles.  Thanks for stopping by and enjoy!
-     <br>
-     Mind the dust - this site is still under construction!
   </p>
+  <p class="font-bold text-center pt-2">Please mind the dust - this site is still under construction!</p>
   <h3 class="font-bold text-3xl text-center pt-20 pb-6">Recent Blog Posts:</h3>
   <div class="flex flex-row drop-shadow-xl justify-center space-x-16 h-70">{posts.map((post) => <BlogPostCard content={post} />)}</div>
 </BaseLayout>
