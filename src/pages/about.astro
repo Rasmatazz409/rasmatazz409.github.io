@@ -1,12 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import banner from '/src/images/Banner.png';
 const pageTitle = "About Me";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<div class="flex w-full justify-center">
 		<div class="m-4">
-			<img src='/src/images/Banner.png' alt="banner" width="920" class="rounded-3xl m-2"/>
+			<Image src={banner} alt="banner" width="920" class="rounded-3xl m-2" />
 			<h1 class="text-center text-6xl font-bold pt-4">About Me</h1>
 		</div>
 	</div>
