@@ -6,7 +6,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 const posts = allPosts.slice(-3).reverse();
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2 class="text-bold text-5xl text-center">Welcome!</h2>
+  <h2 class="text-bold text-5xl text-center text-redwood">Welcome!</h2>
   <p class="indent-8 pt-4 mx-20 text-left">
      My name is Tyler Rasmussen, also sometimes known as "Rasmatazz" among many other aliases.  You've reached my personal blog and portfolio - a place for me to share the many unique projects I work on as well as
      my personal insights into numerous topics.  You'll find a wide variety of posts here ranging from the realm of technology to the creative arts - no two posts are often alike and my interests vary often.

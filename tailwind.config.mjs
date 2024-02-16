@@ -18,7 +18,10 @@ export default {
 				DEFAULT: '#E8D2B5',
 				light: "#E5DED5",
 			},
-			'mustard': '#EBAA4B',
+			'mustard': {
+				DEFAULT: '#EBAA4B',
+				light: '#FFE3C9',
+			},
 			'indian-red': '#D65F5D',
 			'redwood': {
 				DEFAULT: '#A04746',
@@ -27,6 +30,7 @@ export default {
 			'brown' : {
 				DEFAULT: '#5C2300',
 				light: '#8c6239',
+				dark: '#2A1000',
 			},
 		},
 	},

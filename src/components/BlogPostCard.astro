@@ -6,7 +6,7 @@ const imgSrc = content.frontmatter.image.url ? content.frontmatter.image.url : '
 const description = content.frontmatter.description || parse(await content.compiledContent()).querySelector('p:first-of-type')?.innerText;
 ---
 
-<div class="transition grid-cols-2 rounded-xl bg-slate-500 m-1 p-1 w-full text-slate-100 text-center drop-shadow-xl">
+<div class="transition grid-cols-2 rounded-xl bg-brown-dark m-1 p-1 w-full text-sand text-center drop-shadow-xl">
     <a href={content.url}>
         <h1 class="font-bold text-xl line-clamp-1 col-span-2">{content.frontmatter.title}</h1>
         <p class="col-span-2 pb-4">Published: {content.frontmatter.pubDate.slice(0,10)}</p>
