@@ -4,7 +4,7 @@ import Footer from '../components/Footer.astro';
 const { pageTitle } = Astro.props;
 ---
 
-<html class="bg-zinc-300" style="font-family:'Courier New', Courier, monospace;" lang="en">
+<html class="bg-sand-light" style="font-family:'Courier New', Courier, monospace;" lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,17 +15,17 @@ const { pageTitle } = Astro.props;
 	<body>
 		<div class="m-5 flex flex-col justify-items-center shadow-xl">
 
-			<div class=" rounded-t-lg bg-slate-400 drop-shadow-xl">
+			<div class=" rounded-t-lg bg-redwood-dark drop-shadow-xl">
 				<Header />
 			</div>
 
-			<div class="bg-slate-300">
+			<div class="bg-sand">
 				<div class="m-4">
 					<slot />
 				</div>
 			</div>
 
-			<div class="rounded-b-lg bg-slate-500 drop-shadow-xl">
+			<div class="rounded-b-lg bg-brown drop-shadow-xl">
 				<Footer />
 			</div>
 

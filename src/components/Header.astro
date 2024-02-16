@@ -1,13 +1,16 @@
 ---
+import { Image } from 'astro:assets';
 import Navigation from './Navigation.astro';
+import logo from './src/images/RetroIcon.png';
+import banner from './src/images/rasmatazz.png';
 ---
 
 <header>
     <nav class="flex flex-row items-center">
         <div class="flex flex-row basis-1/2 justify-start">
             <a href="/" class="flex flex-row">
-                <img src="/RetroIcon.png" width="80" height="80" alt="logo" class="rounded-full m-2 drop-shadow-xl">
-                <h2 class="pl-3 text-6xl text-red-800 font-bold drop-shadow-lg self-center" style="font-family: 'Courier';">Rasmatazz</h2>
+                <Image src={logo} alt="logo" width="80" height="80" class="rounded-full drop-shadow-xl m-2"/>
+                <Image src={banner} alt="banner" height="80" class="m-2 self-center" />
             </a>
         </div>
         <div class="items-center basis-1/2">
