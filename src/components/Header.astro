@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Navigation from './Navigation.astro';
 import icon from '/src/images/RetroIcon.png';
-import banner from '/src/images/rasmatazz.png';
+import nameBanner from '/src/images/rasmatazz.png';
 ---
 
 <header>
@@ -10,7 +10,7 @@ import banner from '/src/images/rasmatazz.png';
         <div class="flex flex-row basis-1/2 justify-start">
             <a href="/" class="flex flex-row">
                 <Image src={icon} alt="logo" height="80" width="80" class="rounded-full drop-shadow-xl m-2" />
-                <Image src={banner} alt="banner" height="80" class="m-2" />
+                <Image src={nameBanner} alt="banner" height="80" class="m-2" />
             </a>
         </div>
         <div class="items-center basis-1/2">
