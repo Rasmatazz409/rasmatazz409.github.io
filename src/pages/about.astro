@@ -3,13 +3,44 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import bannerTitle from '/src/images/Banner.png';
 const pageTitle = "About Me";
+const progLang = ["Python", "HTML/CSS", "Javascript", "Powershell"];
+const interests = ["3D Printing", "Model-Making", "Microcontrollers/Electronics", "Networking", "Music Composition", "Anime & Manga"]
+const games = ["Overwatch 2", "Dungeons & Dragons", "Mabinogi", "Minecraft", "Board Games"]
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<div class="flex w-full justify-center">
+	<div class="flex flex-col w-full justify-center text-redwood-dark">
 		<div class="m-4">
-			<Image src={bannerTitle} alt="banner" width="920" class="rounded-3xl m-2" />
+			<Image src={bannerTitle} alt="banner" width="920" class="rounded-3xl mx-auto" />
 			<h1 class="text-center text-6xl font-bold pt-4">About Me</h1>
+			<div class="w-3/4 mx-auto mt-8">
+				<p class="indent-8 text-lg">
+					Hi there!  My name is Tyler Rasmussen.  I also go by many aliases in different online communities including Rasmatazz, BladeThief, and many others.  Professionally, I work in IT but have also performed
+					as a professional musician.  Many of my projects and hobbies will center around both very hands-on technical goals as well as creative and artistic paths.  Many of the projects and blog posts you see here
+					will tie into one of these two categories - if not both.  My projects may also tie into anything I'm into at the moment: video games, movies, music, and more.  You can see some of the projects or interests
+					that I'm currently into or working on below.
+				</p>
+			</div>
+			<div class="flex flex-row w-1/2 mx-auto space-x-12 my-4">
+				<div id="languages">
+					<p>Programming Languages:</p>
+					<ul class="list-disc list-inside">
+						{progLang.map((lang) => <li>{lang}</li>)}
+					</ul>
+				</div>
+				<div id="interests">
+					<p>General Interests:</p>
+					<ul class="list-disc list-inside">
+						{interests.map((interest) => <li>{interest}</li>)}
+					</ul>
+				</div>
+				<div id="games">
+					<p>Games:</p>
+					<ul class="list-disc list-inside">
+						{games.map((game) => <li>{game}</li>)}
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </BaseLayout>
