@@ -6,14 +6,18 @@ const imgSrc = content.frontmatter.image.url ? content.frontmatter.image.url : '
 const description = content.frontmatter.description || parse(await content.compiledContent()).querySelector('p:first-of-type')?.innerText;
 ---
 
-<div class="transition rounded-xl bg-brown-dark p-1 h-auto w-full text-sand drop-shadow-xl">
-    <div class="text-center h-1/6">
+<div class="transition rounded-xl bg-brown-dark p-1 h-64 w-full text-sand drop-shadow-xl">
+    <div class="text-center h-1/6 mb-2">
         <h1 class="font-bold text-xl line-clamp-1">{content.frontmatter.title}</h1>
         <p class="pb-4">Published: {content.frontmatter.pubDate}</p>
     </div>
-    <div class="flex flex-row indent-4 h-4/6 p-2">
-        <img src={imgSrc} width="300" height="300" class="rounded-2xl m-2">
-        <p class="line-clamp-6">{description}</p>
+    <div class="flex flex-row indent-4 h-4/6 p-2 space-x-2">
+        <div class="w-1/2">
+            <img src={imgSrc} class="rounded-2xl max-h-full max-w-full mx-auto">
+        </div>
+        <div class="w-1/2">
+            <p class="line-clamp-6">{description}</p>
+        </div>
     </div>
     <div class="w-full h-1/6 text-right p-2">
         <a href={content.url} class="font-bold">Read More</a>
