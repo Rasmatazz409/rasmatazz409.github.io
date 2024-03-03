@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPostCardList from '../components/BlogPostCardList.astro';
 const allPosts = await Astro.glob('../pages/posts/*.md');
 const recent = allPosts.reverse();
-const pageTitle = "Blog";
+const pageTitle = "Blog Posts";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
