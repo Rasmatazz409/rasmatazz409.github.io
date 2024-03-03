@@ -6,7 +6,7 @@ description: 'Insight into the MML language used by the MMORPG Mabinogi to creat
 image:
     url: '/blog_images/post2/Mabinogi_Logo.jpg'
     alt: 'Mabinogi logo'
-tags: ["video games", "music", "Mabinogi", "MML", "coding", "website"]
+tags: ["video games", "music", "Mabinogi", "MML", "coding"]
 ---
 
 # Coding Music In Mabinogi Using MML
